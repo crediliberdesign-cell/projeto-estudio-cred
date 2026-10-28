@@ -1,0 +1,134 @@
+=== RUN   TestSimpleChatStreamingAndSettings
+--- PASS: TestSimpleChatStreamingAndSettings (0.02s)
+=== RUN   TestAgentWaitReleasesGPUForDependentJob
+--- PASS: TestAgentWaitReleasesGPUForDependentJob (0.32s)
+=== RUN   TestGreetingWithTaskUsesAgent
+--- PASS: TestGreetingWithTaskUsesAgent (0.00s)
+=== RUN   TestPublicSearchDoesNotIntroduceDocumentTerms
+--- PASS: TestPublicSearchDoesNotIntroduceDocumentTerms (0.00s)
+=== RUN   TestDiagnosticExportOmitsPathsContentAndCredentials
+--- PASS: TestDiagnosticExportOmitsPathsContentAndCredentials (0.00s)
+=== RUN   TestMotionPlayerAssetRoute
+--- PASS: TestMotionPlayerAssetRoute (0.02s)
+=== RUN   TestProjectPreviewAuthorizesOriginalAndRejectsUnrelatedFile
+--- PASS: TestProjectPreviewAuthorizesOriginalAndRejectsUnrelatedFile (0.01s)
+=== RUN   TestExplicitBrandRefreshPreservesVideoChoices
+--- PASS: TestExplicitBrandRefreshPreservesVideoChoices (0.02s)
+=== RUN   TestAutomaticMemoryScopesAndDisable
+--- PASS: TestAutomaticMemoryScopesAndDisable (0.01s)
+=== RUN   TestToolRejectsOtherCompanyJobAndArbitraryCode
+--- PASS: TestToolRejectsOtherCompanyJobAndArbitraryCode (0.00s)
+=== RUN   TestBuildBrandReusesFontForMultipleRoles
+--- PASS: TestBuildBrandReusesFontForMultipleRoles (0.00s)
+=== RUN   TestInstallerManifest
+--- PASS: TestInstallerManifest (0.00s)
+=== RUN   TestDownloadResumes
+--- PASS: TestDownloadResumes (0.00s)
+=== RUN   TestDownloadServerIgnoresRange
+--- PASS: TestDownloadServerIgnoresRange (0.00s)
+=== RUN   TestDownloadRejectsCorruption
+--- PASS: TestDownloadRejectsCorruption (0.00s)
+=== RUN   TestDownloadRejectsWrongRange
+--- PASS: TestDownloadRejectsWrongRange (0.00s)
+=== RUN   TestExtractRejectsTraversal
+=== RUN   TestExtractRejectsTraversal/../escape.exe
+=== RUN   TestExtractRejectsTraversal//absolute.exe
+=== RUN   TestExtractRejectsTraversal/..\escape.exe
+=== RUN   TestExtractRejectsTraversal/C:/evil.exe
+--- PASS: TestExtractRejectsTraversal (0.01s)
+    --- PASS: TestExtractRejectsTraversal/../escape.exe (0.00s)
+    --- PASS: TestExtractRejectsTraversal//absolute.exe (0.00s)
+    --- PASS: TestExtractRejectsTraversal/..\escape.exe (0.00s)
+    --- PASS: TestExtractRejectsTraversal/C:/evil.exe (0.00s)
+=== RUN   TestExtractRejectsSymlink
+--- PASS: TestExtractRejectsSymlink (0.00s)
+=== RUN   TestExtractValid
+--- PASS: TestExtractValid (0.00s)
+=== RUN   TestDownloadCancellation
+--- PASS: TestDownloadCancellation (0.00s)
+=== RUN   TestPinnedModelDigestMismatch
+--- PASS: TestPinnedModelDigestMismatch (0.00s)
+=== RUN   TestVisualCRuntimeManifestMatchesBootstrap
+--- PASS: TestVisualCRuntimeManifestMatchesBootstrap (0.00s)
+=== RUN   TestInstallerWorkerResultParsing
+--- PASS: TestInstallerWorkerResultParsing (0.00s)
+=== RUN   TestInstallerQuickChatBenchmarkEvidence
+--- PASS: TestInstallerQuickChatBenchmarkEvidence (0.00s)
+=== RUN   TestInstallerQuickChatRequiresCompletedStream
+--- PASS: TestInstallerQuickChatRequiresCompletedStream (0.00s)
+=== RUN   TestIntegrationVideoChoicesStayPerProject
+--- PASS: TestIntegrationVideoChoicesStayPerProject (0.02s)
+=== RUN   TestIntegrationPersistenceAndMemoryIsolation
+--- PASS: TestIntegrationPersistenceAndMemoryIsolation (0.03s)
+=== RUN   TestIntegrationUploadsStayInCompany
+--- PASS: TestIntegrationUploadsStayInCompany (0.03s)
+=== RUN   TestIntegrationFileScopeAndSymlinkEscape
+--- PASS: TestIntegrationFileScopeAndSymlinkEscape (0.01s)
+=== RUN   TestIntegrationComputerScopeStillExcludesOtherCompanies
+--- PASS: TestIntegrationComputerScopeStillExcludesOtherCompanies (0.02s)
+=== RUN   TestIntegrationCanonicalCompanyBoundary
+--- PASS: TestIntegrationCanonicalCompanyBoundary (0.02s)
+=== RUN   TestIntegrationExternalCompanyFoldersExcluded
+--- PASS: TestIntegrationExternalCompanyFoldersExcluded (0.02s)
+=== RUN   TestIntegrationRAGCompanyIsolation
+--- PASS: TestIntegrationRAGCompanyIsolation (0.02s)
+=== RUN   TestIntegrationSessionHostAndOriginProtection
+=== RUN   TestIntegrationSessionHostAndOriginProtection/missing_token
+=== RUN   TestIntegrationSessionHostAndOriginProtection/valid
+=== RUN   TestIntegrationSessionHostAndOriginProtection/foreign_host
+=== RUN   TestIntegrationSessionHostAndOriginProtection/foreign_origin
+--- PASS: TestIntegrationSessionHostAndOriginProtection (0.00s)
+    --- PASS: TestIntegrationSessionHostAndOriginProtection/missing_token (0.00s)
+    --- PASS: TestIntegrationSessionHostAndOriginProtection/valid (0.00s)
+    --- PASS: TestIntegrationSessionHostAndOriginProtection/foreign_host (0.00s)
+    --- PASS: TestIntegrationSessionHostAndOriginProtection/foreign_origin (0.00s)
+=== RUN   TestCompanyTransferRoundTripWithAssets
+--- PASS: TestCompanyTransferRoundTripWithAssets (0.09s)
+=== RUN   TestCompanyTransferConfigOnlyAndExplicitMedia
+--- PASS: TestCompanyTransferConfigOnlyAndExplicitMedia (0.05s)
+=== RUN   TestCompanyTransferRejectsForeignFilePath
+--- PASS: TestCompanyTransferRejectsForeignFilePath (0.02s)
+=== RUN   TestCompanyTransferRejectsMaliciousArchives
+=== RUN   TestCompanyTransferRejectsMaliciousArchives/../escape.txt
+=== RUN   TestCompanyTransferRejectsMaliciousArchives//absolute.txt
+=== RUN   TestCompanyTransferRejectsMaliciousArchives/C:\\escape.txt
+=== RUN   TestCompanyTransferRejectsMaliciousArchives/assets/../../bad
+=== RUN   TestCompanyTransferRejectsMaliciousArchives/assets/CON
+=== RUN   TestCompanyTransferRejectsMaliciousArchives/undeclared.txt
+=== RUN   TestCompanyTransferRejectsMaliciousArchives/symlink
+=== RUN   TestCompanyTransferRejectsMaliciousArchives/checksum
+=== RUN   TestCompanyTransferRejectsMaliciousArchives/expanded_budget
+--- PASS: TestCompanyTransferRejectsMaliciousArchives (0.02s)
+    --- PASS: TestCompanyTransferRejectsMaliciousArchives/../escape.txt (0.00s)
+    --- PASS: TestCompanyTransferRejectsMaliciousArchives//absolute.txt (0.00s)
+    --- PASS: TestCompanyTransferRejectsMaliciousArchives/C:\\escape.txt (0.00s)
+    --- PASS: TestCompanyTransferRejectsMaliciousArchives/assets/../../bad (0.00s)
+    --- PASS: TestCompanyTransferRejectsMaliciousArchives/assets/CON (0.00s)
+    --- PASS: TestCompanyTransferRejectsMaliciousArchives/undeclared.txt (0.00s)
+    --- PASS: TestCompanyTransferRejectsMaliciousArchives/symlink (0.00s)
+    --- PASS: TestCompanyTransferRejectsMaliciousArchives/checksum (0.00s)
+    --- PASS: TestCompanyTransferRejectsMaliciousArchives/expanded_budget (0.00s)
+=== RUN   TestCompanyTransferDoesNotAcceptVideoSettings
+--- PASS: TestCompanyTransferDoesNotAcceptVideoSettings (0.00s)
+=== RUN   TestCompanyTransferCompressedWriterLimit
+--- PASS: TestCompanyTransferCompressedWriterLimit (0.00s)
+=== RUN   TestUninstallPreservesUserData
+--- PASS: TestUninstallPreservesUserData (0.03s)
+=== RUN   TestUninstallRejectsUnrecognizedDirectory
+--- PASS: TestUninstallRejectsUnrecognizedDirectory (0.00s)
+=== RUN   TestUninstallSymlinkEscape
+--- PASS: TestUninstallSymlinkEscape (0.01s)
+=== RUN   TestUninstallLeafSymlinkDoesNotFollow
+--- PASS: TestUninstallLeafSymlinkDoesNotFollow (0.01s)
+=== RUN   TestUninstallSessionRejectsExternalAndRedirectTargets
+--- PASS: TestUninstallSessionRejectsExternalAndRedirectTargets (0.00s)
+=== RUN   TestUninstallStopsOnlyAuthenticatedMatchingSession
+--- PASS: TestUninstallStopsOnlyAuthenticatedMatchingSession (0.21s)
+=== RUN   TestUninstallRefusesOtherApplication
+--- PASS: TestUninstallRefusesOtherApplication (0.01s)
+=== RUN   TestUninstallRejectsLinkedDatabase
+--- PASS: TestUninstallRejectsLinkedDatabase (0.01s)
+=== RUN   TestUninstallRefusesCopiedSessionFromOtherRoot
+--- PASS: TestUninstallRefusesCopiedSessionFromOtherRoot (0.02s)
+PASS
+ok  	atelie.local/agent	2.704s

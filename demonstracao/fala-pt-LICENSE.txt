@@ -1,0 +1,11 @@
+Portuguese ASR readiness sample: sample-pt.wav
+Spoken content: "Parabéns" (Brazilian Portuguese).
+Author: Lukenji, 23 August 2017.
+Source: https://commons.wikimedia.org/wiki/File:Pt-br-parab%C3%A9ns.ogg
+Original: https://upload.wikimedia.org/wikipedia/commons/7/75/Pt-br-parab%C3%A9ns.ogg
+Original SHA-1: 9fd6297cb133270ed860ae50a92baa983d3bdc93 (matches Commons metadata).
+License: CC0 1.0 Universal Public Domain Dedication.
+https://creativecommons.org/publicdomain/zero/1.0/
+Adaptation: decoded Ogg Vorbis to mono PCM 16 kHz, appended 0.5 s silence.
+This very short fixture checks functioning speech inference, not production
+transcription accuracy or comprehensive Portuguese/GPU performance.

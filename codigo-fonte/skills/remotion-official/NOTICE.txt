@@ -1,0 +1,7 @@
+The downloaded remotion-dev/skills snapshot contains no standalone LICENSE file.
+Its package.json identifies the source as remotion-dev/remotion/packages/skills.
+LICENSE-REMOTION-UPSTREAM.md is the exact license shipped by remotion@4.0.539,
+included as an upstream notice; it is not an assertion of a separate MIT license
+for these materials. Source and fixed commit are recorded in SOURCE.json.
+Review the organization's eligibility and applicable Remotion terms before
+commercial use. https://www.remotion.dev/docs/license/pricing

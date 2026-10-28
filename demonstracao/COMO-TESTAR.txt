@@ -1,0 +1,11 @@
+DEMONSTRAÇÃO — todos os nomes/identidade são fictícios.
+Na tela Empresas, importe Empresa-Demonstracao.zip e confirme a prévia.
+Inclui logo e manual de referência, sem briefing atual nem escolhas de vídeo.
+O logo usa a fonte local Arial; não inclui nem redistribui um arquivo de fonte.
+As cores e a identidade são apenas para teste, não substituem as marcas reais.
+
+amostra-sintetica.mp4: 6 segundos, padrão visual/tom com pausa; criada para testar
+cortes, proporção e áudio. Não contém fala. Material autoral sob CC0-1.0.
+fala-pt.wav: amostra CC0 brasileira curta; licença/origem em fala-pt-LICENSE.txt.
+Use a fala para testar transcrição, não como benchmark completo de precisão.
+Veja os passos ao final do RELATORIO-DE-VALIDACAO.txt.

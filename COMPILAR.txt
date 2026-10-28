@@ -1,0 +1,52 @@
+CÓDIGO-FONTE — ESTÚDIO LOCAL 1.0.0-preview.1
+
+O diretório codigo-fonte contém todos os componentes de aplicação, mídia,
+interface, skills, manifesto de downloads e locks. Go usa somente biblioteca
+padrão. Não é necessário compilar para instalar: o EXE já está no pacote.
+
+Recompilar (desenvolvimento):
+1. Instale Go 1.25 ou posterior. A entrega foi compilada com Go 1.27.3.
+2. No PowerShell, dentro de codigo-fonte:
+   $env:GOOS="windows"
+   $env:GOARCH="amd64"
+   $env:CGO_ENABLED="0"
+   go test ./...
+   go build -trimpath -ldflags "-H=windowsgui -s -w" -o ..\EstudioLocal-Instalar.exe .
+3. Opcional: execute testes Go com -race em ambiente compatível antes de cross-build.
+   Uma cross-compilação não executa os testes do Windows.
+
+Desenvolvimento no Mac/Linux:
+   go test -race ./...
+   go build -o estudio-dev .
+   ./estudio-dev --data-dir /caminho/de/teste --no-browser
+A instalação automática é bloqueada fora do Windows. Para testes da mídia no
+host é preciso preparar runtime.json com executáveis reais compatíveis com o host;
+isso é configuração de desenvolvimento, não uma etapa exigida ao operador.
+
+Python/Remotion no destino são instalados automaticamente pelo assistente:
+- Python 3.12.12 em ambiente privado; media/requirements.lock com hashes.
+- Remotion 4.0.539; npm ci usando remotion/package-lock.json.
+- npm run build:player e remotion browser ensure antes do primeiro uso offline.
+O instalador valida arquivos binários e modelos conforme downloads.json.
+
+Organização:
+main.go / http.go: app, interface local, API, permissões de sessão.
+installer.go: downloads, runtimes, modelos e verificações no destino.
+agent.go: modelo rápido/agente, streaming, ferramentas e memória automática.
+documents.go: extração, embeddings locais, recuperação lexical e citações.
+jobs.go + media/worker.py: fila, cancelamento, FFmpeg, ASR e timeline.
+remotion/: templates, prévia Player e renderização.
+transfer.go: importação/exportação explícita de identidade e arquivos.
+uninstall.go: remoção de componentes, preservando dados e modelos.
+web/: interface em português. skills/: instruções conectadas às ferramentas.
+
+Banco: JSON estruturado com gravação atômica e bloqueio em processo, schema=1.
+Não depende de um servidor de banco. A recuperação lexical usa pontuação no índice
+local; não é SQLite FTS5. Dados são separados por IDs e filtros no backend.
+A seleção de empresas NÃO autentica diferentes funcionários de uma mesma conta
+Windows. Use contas/controles do sistema para confidencialidade entre pessoas.
+Não há shell arbitrário exposto ao modelo nem execução de JSX gerado livremente.
+
+Atualizações: preserve a pasta de dados e um backup completo. Esta é a primeira
+versão do schema; migração automática de outros produtos ou schemas futuros não
+foi implementada. Não apague Ollama/Open WebUI anteriores para instalar esta versão.

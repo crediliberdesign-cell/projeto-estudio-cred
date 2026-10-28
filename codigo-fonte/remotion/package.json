@@ -1,0 +1,24 @@
+{
+  "name": "assistente-video-motion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ensure-browser": "remotion browser ensure",
+    "build:player": "node build-player.mjs",
+    "render-job": "node render.mjs"
+  },
+  "dependencies": {
+    "remotion": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "@remotion/bundler": "4.0.539",
+    "@remotion/cli": "4.0.539",
+    "@remotion/player": "4.0.539",
+    "@remotion/captions": "4.0.539",
+    "@remotion/fonts": "4.0.539",
+    "@remotion/layout-utils": "4.0.539",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "esbuild": "0.25.10"
+  }
+}

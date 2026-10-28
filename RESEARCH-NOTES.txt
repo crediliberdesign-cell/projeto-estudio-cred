@@ -1,0 +1,126 @@
+ESTÚDIO LOCAL — PESQUISA E DECISÕES TÉCNICAS
+Revisão: 28/10/2026. Consulte downloads.json para URLs, hashes e revisões exatos.
+
+1. Arquitetura escolhida
+
+Aplicativo próprio em Go, interface em português aberta no navegador e serviços
+restritos ao computador. O mesmo aplicativo conduz cadastro das empresas,
+instalação, chat, arquivos e produção. Ollama é um componente interno: o usuário
+abre o Estúdio Local para fazer pedidos. Python, Node e FFmpeg ficam em pastas
+gerenciadas. Não são exigidos Docker, WSL ou ferramentas previamente instaladas.
+
+Esta entrega não atualiza nem migra o Open WebUI/Ollama antigo, seus modelos ou
+suas conversas. A escolha de uma interface própria permite um fluxo de produção
+com identidade por empresa e parâmetros por vídeo. Não foi realizado um estudo
+comparativo de todas as interfaces disponíveis.
+
+O agente usa ferramentas com parâmetros definidos, memória local, consulta a
+documentos e modelos de motion. Não executa código arbitrário sugerido por um LLM.
+Permissões do aplicativo continuam limitadas pela conta Windows e pelas regras
+da empresa. Acesso amplo não concede direitos de administrador nem acesso a
+arquivos de outras contas. Duração, proporção, áudio e briefing pertencem a cada
+projeto; identidade, fontes, cores e documentos pertencem à empresa.
+
+2. Versões e origem
+
+- Go 1.27.3: compilação do executável; runtime e biblioteca padrão incorporados.
+  https://go.dev/dl/
+- Ollama 0.40.12, ZIP oficial Windows amd64: inferência local em processo próprio.
+  https://github.com/ollama/ollama/releases/tag/v0.40.12
+  https://docs.ollama.com/windows
+- uv 0.13.6 e Python 3.12.12: ambiente Python administrado pelo instalador.
+  A distribuição exata do Python é selecionada pelo uv fixado.
+  https://github.com/astral-sh/uv/releases/tag/0.13.6
+  https://docs.astral.sh/uv/concepts/python-versions/
+- Node 22.23.4 LTS: runtime do Remotion.
+  https://nodejs.org/dist/v22.23.4/
+  https://nodejs.org/dist/v22.23.4/SHASUMS256.txt
+- FFmpeg 9.0.2 essentials, compilação Windows da Gyan, com FFprobe/libass.
+  A Gyan produz o binário; não é um executável compilado pelo projeto FFmpeg.
+  https://www.gyan.dev/ffmpeg/builds/
+  https://github.com/GyanD/codexffmpeg/releases/tag/9.0.2
+- Microsoft Visual C++ x64 14.51.36247.0: instalado somente quando necessário.
+  SHA256 e assinatura Authenticode Microsoft são conferidos antes da execução.
+  O UAC é apenas do instalador Microsoft; políticas corporativas não são burladas.
+  https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
+- Remotion 4.0.539 e pacotes @remotion alinhados; React/ReactDOM 19.1.1;
+  esbuild 0.25.10. O package-lock.json fixa a árvore npm e sua integridade.
+  O navegador de renderização é obtido por remotion browser ensure na instalação.
+  https://www.remotion.dev/docs/renderer
+  https://www.remotion.dev/docs/cli/browser
+- faster-whisper 1.2.1, CTranslate2 4.8.4, PyAV 16.0.1, Pillow 11.3.0,
+  fonttools 4.60.1, pypdf 6.1.1, python-docx 1.2.0 e brotli 1.1.0.
+  Dependências transitivas e hashes estão em media/requirements.lock.
+  https://github.com/SYSTRAN/faster-whisper
+  https://opennmt.net/CTranslate2/installation.html
+- Bibliotecas NVIDIA Windows: cuBLAS 12.9.2.10, cuDNN 9.27.0.42 e
+  CUDA runtime 12.9.79; NVRTC transitivo consta no lock. Não se instala um driver
+  de vídeo automaticamente. O driver existente precisa ser compatível.
+
+3. Modelos e velocidade
+
+Qwen3.5 4B é o modelo rápido; Qwen3.5 9B atende o modo de agente mais capaz.
+EmbeddingGemma fornece vetores para recuperar documentos. Os manifests Ollama
+foram conferidos e seus digests estão fixados em downloads.json; uma alteração
+do mesmo nome no servidor não é aceita silenciosamente.
+https://huggingface.co/Qwen/Qwen3.5-4B
+https://huggingface.co/Qwen/Qwen3.5-9B
+https://ollama.com/library/qwen3.5
+https://huggingface.co/google/embeddinggemma-300m
+
+O modo rápido limita contexto e geração e desativa o raciocínio explícito.
+Carregamento inicial, contexto, uso de VRAM, programas abertos e driver ainda
+afetam a resposta. A instância de embeddings usa CPU para evitar substituições
+do modelo de conversa na GPU. Trabalhos que disputam a GPU são coordenados.
+Referências das opções e medições da API:
+https://docs.ollama.com/api/chat
+https://docs.ollama.com/api/ps
+https://docs.ollama.com/faq
+https://docs.ollama.com/gpu
+
+Para fala, usa-se o snapshot faster-whisper-large-v3-turbo, revisão
+0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf, com cinco arquivos verificados por SHA256.
+https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo
+
+CUDA/FP16 é tentado quando o backend declara suporte. Em falha, a transcrição
+repete em CPU/int8 e registra o motivo. Isso não demonstra que a combinação
+Windows + RTX 5060 Ti funcionou: essa execução não ocorreu durante a preparação.
+NVENC também é detectado por execução real no computador de destino; sua presença
+na lista de codecs não basta para prometer aceleração.
+
+Relato comunitário consultado como pista, sem tratar números como benchmark:
+https://www.reddit.com/r/LocalLLaMA/comments/1shvyfc/qwen_35_9b_being_very_slow_in_16gb_vram_rtx_5060ti/
+As configurações e resultados variam entre participantes. Nenhuma taxa de tokens
+por segundo desse tópico foi adotada como garantia desta entrega.
+
+4. O que foi observado e o que será conferido no destino
+
+Foram executados testes de código e fluxos de mídia no ambiente de desenvolvimento
+macOS. Uma transcrição real revelou incompatibilidade de faster-whisper 1.2.1 com
+PyAV 19, cuja API removeu metadata_errors; a versão foi fixada em 16.0.1. A amostra
+curta em português foi transcrita com um modelo tiny em CPU no desenvolvimento.
+Isso não equivale a validar Whisper turbo ou GPU no Windows.
+
+O instalador só conclui as verificações finais após: importar as dependências;
+transcrever uma fala real em português; receber duas respostas do modelo rápido
+(após descarregamento e já carregado); renderizar um motion de dois segundos e
+decodificar o MP4. A sondagem NVENC aceita CPU como alternativa e informa a falha.
+logs/readiness.json registra evidências, dispositivo, avisos e tempos. Os tempos
+de primeira resposta e os dados de carga/geração são medições locais, não promessas.
+
+A máquina Windows informada não estava disponível para teste. Compilar um .exe
+para Windows e revisar seus caminhos não equivale a executar a instalação nele.
+415 GB é capacidade informada: a verificação usa espaço realmente livre na unidade.
+
+5. Limites e manutenção
+
+O pacote produz motion por composições parametrizadas e processa mídia enviada.
+Não inclui geração fotorealista de vídeo nem um serviço de voz sintética. Modelos
+4B/9B não têm capacidade equivalente a um grande agente hospedado. Qualidade de
+planejamento, legendas, cortes e texto precisa ser revisada pelo operador.
+
+Internet é necessária na primeira instalação e em pesquisas web solicitadas.
+Depois dos downloads, as rotinas locais usam os arquivos instalados. Mudanças
+de versão exigem atualizar locks, hashes e verificar novamente os fluxos. O
+instalador não compra licenças comerciais nem converte o software de terceiros
+em software de licença irrestrita; consulte THIRD-PARTY-NOTICES.txt.

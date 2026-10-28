@@ -1,0 +1,129 @@
+ESTÚDIO LOCAL — RELATÓRIO DE VALIDAÇÃO
+1.0.0-preview.1 · 28/10/2026
+
+ESTADO DA ENTREGA
+Aplicação implementada e executável Windows x64 real, com interface própria,
+bootstrap, fontes e locks. A compilação Windows foi feita no macOS arm64.
+Não foi executado um Windows 11 real nem a RTX 5060 Ti do destinatário.
+Portanto esta entrega é uma versão inicial para validação no computador de destino,
+não uma certificação de compatibilidade, performance ou estabilidade em produção.
+
+AMBIENTE REAL DE TESTE
+macOS arm64; Go 1.27.3; Python gerenciado 3.12; Node do host 24.19.0;
+FFmpeg/ffprobe 7.1 arm64 no host; Remotion 4.0.539; Chrome real para interface.
+O destino usa as versões Windows registradas em downloads.json, incluindo
+Node 22.23.4 e FFmpeg 9.0.2. Essas diferenças não foram ocultadas.
+
+EXECUTADO
+- 49 testes Go principais passaram com detector de condições de corrida.
+  Incluem downloads retomáveis e rejeição de hash/Range inválidos, ZIP malicioso,
+  sessão/origem, duas empresas, persistência, recuperação e esquecimento de memória,
+  separação empresa/vídeo, ferramentas, isolamento por caminho, preview, transferência
+  com arquivos e desinstalação em diretórios temporários. Há subcasos adicionais.
+- Streaming, modelo 4B para conversa simples, think=false, contexto pequeno e cadeia
+  de espera que libera a GPU foram exercitados com API de modelo SIMULADA. Isso
+  valida integração e parâmetros; não mede inteligência nem velocidade dos modelos.
+- 18 testes Python unitários passaram; 7 integrações FFmpeg com arquivo real passaram.
+  Cortes de áudio e vídeo sincronizados, legendas com acentos e remapeamento, exportação
+  vertical, segundo projeto quadrado/mudo e hash do original preservado.
+- Renderizações reais Remotion: motion vertical; carrossel de duas páginas com outra
+  empresa/paleta/logo/fonte; lower third sobre vídeo com áudio original preservado.
+  Quadros representativos foram inspecionados visualmente.
+- Backend Go real: empresa → upload → projeto → fila → exportação FFmpeg → motion
+  Remotion → arquivo MP4 e página do Player. Não foram apenas respostas simuladas.
+- Interface em Chrome real: cadastro sem campos de duração/áudio/formato; paleta
+  visual e conta-gotas, extração com aprovação, HEX exato e persistência; troca de
+  empresa, memória, dois vídeos sem herança de parâmetros e layout móvel.
+- Player real com logo local, asset HTTP200 e imagens diferentes durante playback.
+  Exportação/importação ZIP real manteve bytes do logo por SHA256, criou nova empresa
+  e não transferiu concessões de pasta nem parâmetros de vídeo.
+- Atualização explícita da marca no projeto mudou sua versão, preservou a revisão
+  anterior e não mudou briefing, duração, formato, áudio ou fonte do vídeo.
+- Transcrição real de português com faster-whisper/CT2 e modelo multilíngue tiny em
+  CPU. Houve erro em uma frase da amostra longa. A fala CC0 curta foi reconhecida.
+  Não equivale ao modelo large-v3-turbo ou à GPU que serão usados no destino.
+- Extração real de PDF textual e DOCX; fonte local inspecionada e renderizada.
+- Executável PE32+ AMD64 com subsistema Windows GUI; código e assets incorporados.
+
+COMANDOS E EVIDÊNCIAS
+Go: go test -race -v ./... (log em validacao/go-tests.txt).
+Python: python -m unittest discover -s media/tests -v.
+FFmpeg: FFMPEG=... FFPROBE=... python media/tests/integration.py <pasta temporária>.
+Remotion: npm ci; npm run build:player; worker.py --request <job.json>.
+Interface: scripts Playwright em codigo-fonte/web/.checks; dados fictícios.
+Relatórios detalhados: codigo-fonte/media/VALIDATION.md e
+validacao/VALIDACAO-INTERFACE.md. Capturas representativas em validacao.
+Alguns testes da interface alteraram APENAS installed=true na resposta do navegador
+para acessar telas de uso no Mac; o banco continuou sem instalação Windows.
+As primeiras verificações de interface usaram API simulada; as posteriores usaram
+APIs reais. Os relatórios distinguem esses casos.
+O último ajuste de apresentação do nome original do vídeo teve verificação de
+sintaxe; foi incorporado após o teste completo da interface.
+
+CORRIGIDO APÓS FALHAS OBSERVADAS
+- PyAV 19 era incompatível com faster-whisper 1.2.1: fixado av 16.0.1.
+- Caminho dos assets do Player divergente: corrigido e testado com logo real.
+- Prévia do vídeo original importado era bloqueada: acesso exato autorizado e testado.
+- Fonte carregava depois da medição do texto: render agora aguarda a fonte.
+- Preservar resolução/duração original e escolhas de duração pendentes: contratos
+  ajustados, com testes de regressão e mensagens específicas.
+- Saudação contendo tarefa podia ir ao modo simples: roteamento corrigido.
+
+PENDENTE NO COMPUTADOR DE DESTINO
+Instalação limpa e retomada real no Windows; políticas/proxy/UAC/SmartScreen;
+reabertura e uso completamente offline; driver/Blackwell/FP16; modelo turbo;
+NVENC; uso de VRAM com outros programas; qualidade do agente 9B em tarefas longas;
+velocidade real e comparação com a instalação WebUI anterior. Aquela instalação
+não foi acessada: a causa específica da lentidão anterior permanece não medida.
+Também não houve avaliação auditiva extensa nem validação de todos os codecs,
+fontes, SVGs e vídeos de produção possíveis.
+
+VERIFICAÇÕES AUTOMÁTICAS INCLUÍDAS NO INSTALADOR
+Após os downloads, executa imports/libass, transcrição curta portuguesa offline,
+duas respostas do modelo rápido (carga inicial e já carregado), um motion de dois
+segundos com FFprobe+decodificação e tentativa real NVENC. Registra tempos e
+dispositivo em logs/readiness.json; a tela Diagnóstico expõe métricas sem conteúdo.
+CPU é alternativa declarada em caso de falha de aceleração; pode ser mais lenta.
+Só essas amostras são verificadas. Não garantem todas as tarefas de produção.
+
+LIMITES IMPLEMENTADOS
+- Chat/agente usa Qwen3.5 4B/9B; não é equivalente a um modelo de fronteira na nuvem.
+- Motion usa templates editáveis por parâmetros/cenas; não executa JSX arbitrário.
+- Carrosséis são PNGs. Edição trabalha com arquivos locais; não controla o Premiere.
+- Não há geração fotorrealista de vídeo, voz sintética, diarização, forced alignment,
+  remoção de fundo, upscaling, Blender ou OCR. PDF escaneado recebe aviso explícito.
+- Corte de pausas usa amplitude e pode cortar respiração/pausas úteis: revise a prévia.
+  Transcrição e alinhamento de trechos editados exigem revisão humana.
+- Busca web usa DuckDuckGo e pode ser limitada/bloqueada. Consultas usam apenas termos
+  da mensagem de pesquisa atual; documentos e memórias não acrescentam termos à rede.
+- Memória automática registra preferências explicitamente declaradas; não memoriza
+  silenciosamente o disco inteiro. Memórias esquecidas deixam o índice ativo, mas
+  podem existir em backups anteriores. Gerencie também os backups.
+- Backup na interface contém banco, conversas e índice; mídia/fontes requerem cópia
+  da pasta de dados ou exportação da empresa com arquivos. Não há assistente completo
+  de restauração do banco. A transferência de empresa não transfere projetos/chats.
+- RAG tem embeddings locais e fallback lexical. O banco é JSON estruturado atômico.
+  Não é um banco multiusuário ou servidor de rede. Selecionar empresa não autentica
+  colegas que compartilhem a mesma conta Windows.
+- O pacote antigo Ollama/WebUI é preservado separado; migração automática não existe.
+  Não há migração testada de futuros schemas nem atualizador comercial assinado.
+- O EXE não tem assinatura comercial. O TI pode precisar autorizar a execução e o
+  pré-requisito Microsoft. O aplicativo não desativa controles de segurança.
+- Remotion possui condições empresariais próprias; não se pressupôs gratuidade.
+
+TESTE GUIADO NO WINDOWS
+1. Instale e aguarde as verificações. Em falha, veja Configurações/Diagnóstico e
+   Reparar componentes; não considere a instalação concluída por existir um atalho.
+2. Importe Empresa-Demonstracao.zip. Faça uma paleta pelo seletor visual e confirme.
+3. Crie vídeo A: vertical, 4 segundos, áudio original, amostra-sintetica.mp4. Peça
+   remover pausas e exportar. Revise as transições e ouça o resultado.
+4. Na mesma empresa, crie vídeo B: quadrado, 2 segundos, sem áudio. Confira que as
+   escolhas de A não vieram automaticamente. Exporte e abra os dois arquivos.
+5. Importe fala-pt.wav e peça transcrever em português. Revise o texto e os tempos.
+6. Crie motion de 3 segundos, 16:9, sem áudio, com texto “Demonstração local”. Veja
+   prévia, logo, legibilidade e arquivo exportado.
+7. Declare “Prefiro títulos curtos para esta marca”, encerre pelo aplicativo e
+   reabra pelo atalho. Confira Memória. Edite/esqueça e confira a tela novamente.
+8. Desconecte internet e repita conversa e exportação. Pesquisa web requer rede.
+9. Crie outra empresa com cores diferentes; verifique isolamento e exportação.
+10. Só depois use cópias de materiais reais de produção.

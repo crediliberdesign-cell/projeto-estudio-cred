@@ -1,0 +1,49 @@
+ESTÚDIO LOCAL — INSTALAÇÃO NO WINDOWS
+Versão 1.0.0-preview.1 · 28/10/2026
+
+1. Copie o ZIP para o computador Windows 11 de 64 bits e escolha “Extrair tudo”.
+2. Abra EstudioLocal-Instalar.exe. O assistente abre no navegador, neste PC.
+3. Cadastre as empresas agora ou deixe para depois. Importe logos, fontes e
+   referências; escolha cores visualmente, pelo conta-gotas ou extração do logo.
+   Códigos HEX/RGB são opcionais. Duração, formato, áudio e briefing NÃO fazem
+   parte desse cadastro: serão definidos individualmente em cada vídeo.
+4. Escolha a pasta dos dados, revise os componentes e os termos do Remotion e
+   inicie a instalação. O programa baixa e configura as ferramentas, os modelos
+   e executa verificações reais. Cancelar e tentar novamente preserva downloads.
+5. Depois, use somente o atalho “Estúdio Local” na área de trabalho. Não precisa
+   abrir Ollama, WebUI, terminal ou Remotion Studio.
+6. Selecione a empresa → Novo vídeo → descreva o pedido, adicione arquivos/pasta
+   e escolha formato, duração e áudio DESTE vídeo. É possível completar detalhes
+   na conversa. Revise legendas/prévias e abra os arquivos na área de resultados.
+
+REQUISITOS E DOWNLOADS
+Alvo: i9-12900KF, RTX 5060 Ti 16 GB, 32 GB RAM, Windows 11 x64. A instalação
+mede o espaço real; “415 GB de armazenamento” não significa 415 GB livres.
+Reserve pelo menos 35 GiB livres para instalação/cache, mais espaço para vídeos.
+Downloads estimados: 15–20 GB; dados instalados/cache: aproximadamente 25–35 GB.
+Os modelos grandes não estão dentro deste ZIP. Internet é necessária na instalação,
+reparo com arquivos ausentes e pesquisa web. Chat, memória e edição funcionam
+localmente depois de concluir o preparo. Não há API paga obrigatória de IA.
+
+DADOS, REPARO E DEMONSTRAÇÃO
+Pasta padrão: %LOCALAPPDATA%\AtelieLocal; se escolher outra pasta, o assistente
+cria AtelieLocal dentro dela. Projetos: projects; materiais: companies.
+Configurações → Reparar componentes é o caminho de reparo. Para encerrar serviços,
+use Configurações → Encerrar aplicativo. Fechar só a aba mantém o app aberto.
+Empresas → Importar cadastro: importe demonstracao/Empresa-Demonstracao.zip
+se quiser testar com uma marca fictícia. As amostras ficam em demonstracao.
+Para remover componentes preservando dados/modelos, abra
+“Desinstalar-preservando-dados.cmd”, ao lado do EXE extraído.
+Backups da tela Memória guardam o banco; faça também cópia da pasta inteira dos
+seus dados para preservar vídeos/fontes. Transferir uma empresa pode incluir seus
+arquivos por seleção explícita; não transfere conversas ou projetos.
+
+ANTES DO USO NA EMPRESA
+Esta versão foi compilada para Windows, mas foi testada em macOS; Windows e a
+RTX de destino ainda NÃO foram validados aqui. O assistente executa verificações
+nesse PC e informa falhas/fallback para CPU. Consulte RELATORIO-DE-VALIDACAO.txt.
+O EXE não tem assinatura comercial. Bloqueios corporativos devem ser tratados com
+TI; não desative proteções. O runtime Microsoft Visual C++ pode pedir UAC/TI.
+O uso empresarial do Remotion pode exigir licença: revise no assistente e em
+https://www.remotion.dev/docs/license/faq . Nenhuma licença é comprada pelo app.
+O Ollama/WebUI antigo e seus dados permanecem separados; não há migração automática.

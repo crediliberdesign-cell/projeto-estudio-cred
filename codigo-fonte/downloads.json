@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-10-28",
+  "minimum_free_bytes": 37580963840,
+  "python_version": "3.12.12",
+  "archives": [
+    {
+      "id": "ollama",
+      "version": "0.40.12",
+      "url": "https://github.com/ollama/ollama/releases/download/v0.40.12/ollama-windows-amd64.zip",
+      "sha256": "21814944f3e50d3f07b6bb3af75baddb96f59e91353c332ac9c5063b3bfd1041",
+      "bytes": 1601458136,
+      "executable": "ollama.exe"
+    },
+    {
+      "id": "uv",
+      "version": "0.13.6",
+      "url": "https://github.com/astral-sh/uv/releases/download/0.13.6/uv-x86_64-pc-windows-msvc.zip",
+      "sha256": "a2a8820d5eea32f08ef467ef3b7f66883a9b076d5737a2fc2fbb5f458d1bb50f",
+      "bytes": 15239500,
+      "executable": "uv.exe"
+    },
+    {
+      "id": "node",
+      "version": "22.23.4",
+      "url": "https://nodejs.org/dist/v22.23.4/node-v22.23.4-win-x64.zip",
+      "sha256": "cbc74b5e0982c9dbb41525fd8fb5dcd32fbee237863f7829072f4639a1ce5f20",
+      "bytes": 34000000,
+      "executable": "node.exe"
+    },
+    {
+      "id": "ffmpeg",
+      "version": "9.0.2",
+      "url": "https://github.com/GyanD/codexffmpeg/releases/download/9.0.2/ffmpeg-9.0.2-essentials_build.zip",
+      "sha256": "60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba",
+      "bytes": 114768076,
+      "executable": "ffmpeg.exe"
+    }
+  ],
+  "models": [
+    {
+      "name": "qwen3.5:4b",
+      "sha256": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "bytes": 3324173757
+    },
+    {
+      "name": "qwen3.5:9b",
+      "sha256": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+      "bytes": 6550825373
+    },
+    {
+      "name": "embeddinggemma:latest",
+      "sha256": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+      "bytes": 621875501
+    }
+  ],
+  "whisper": {
+    "repository": "dropbox-dash/faster-whisper-large-v3-turbo",
+    "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+    "files": [
+      {
+        "name": "config.json",
+        "url": "https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo/resolve/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/config.json",
+        "sha256": "b0253ea6c0d3bea6b1e19e91a02acfd3b53f4467362efcb5a3e6b16c9b3a9b7e",
+        "bytes": 2263
+      },
+      {
+        "name": "model.bin",
+        "url": "https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo/resolve/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/model.bin",
+        "sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+        "bytes": 1617884929
+      },
+      {
+        "name": "preprocessor_config.json",
+        "url": "https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo/resolve/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/preprocessor_config.json",
+        "sha256": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711",
+        "bytes": 340
+      },
+      {
+        "name": "tokenizer.json",
+        "url": "https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo/resolve/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/tokenizer.json",
+        "sha256": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd",
+        "bytes": 2710337
+      },
+      {
+        "name": "vocabulary.json",
+        "url": "https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo/resolve/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/vocabulary.json",
+        "sha256": "c69260f2ab26d659b7c398f9a2b2b48ed0df16c3b47d7326782fd9cba71690c1",
+        "bytes": 1068114
+      }
+    ]
+  },
+  "sources": [
+    "https://api.github.com/repos/ollama/ollama/releases/tags/v0.40.12",
+    "https://api.github.com/repos/astral-sh/uv/releases/tags/0.13.6",
+    "https://nodejs.org/dist/v22.23.4/SHASUMS256.txt",
+    "https://api.github.com/repos/GyanD/codexffmpeg/releases/tags/9.0.2",
+    "https://huggingface.co/api/models/dropbox-dash/faster-whisper-large-v3-turbo?blobs=true",
+    "https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist",
+    "https://opennmt.net/CTranslate2/installation.html"
+  ],
+  "notes": [
+    "Sizes are estimates for display; SHA256 is authoritative. Node size is estimated.",
+    "Ollama verifies downloaded blobs; installer additionally verifies final manifest digest.",
+    "Python patch is pinned; exact standalone build is selected by the pinned uv distribution.",
+    "Remotion npm packages are pinned in assets/remotion/package-lock.json.",
+    "No artifacts are executed before SHA256 verification.",
+    "Visual C++ is installed through the signed Microsoft installer with normal Windows UAC only when the required runtime is absent/older. The app itself runs as the regular user."
+  ],
+  "prerequisites": [
+    {
+      "id": "visual-cpp",
+      "version": "14.51.36247.0",
+      "url": "https://download.visualstudio.microsoft.com/download/pr/ebdab8e5-1d7b-4d9f-a11b-cbb1720c3b12/843068991DAAA1F73AD9F6239BCE4D0F6A07A51F18C37EA2A867E9BECA71295C/VC_redist.x64.exe",
+      "sha256": "843068991daaa1f73ad9f6239bce4d0f6a07a51f18c37ea2a867e9beca71295c",
+      "bytes": 18731856,
+      "executable": "VC_redist.x64.exe",
+      "requires_uac_if_missing": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "environment": "Actual Go backend and compiled frontend, Chrome on macOS",
+  "checks": [
+    "ZIP export requires explicit asset opt-in",
+    "Project media remains separately unchecked",
+    "Bounded local ZIP metadata preview",
+    "Actual ZIP import with logo bytes and matching SHA-256",
+    "New company ID, no inherited folder grants/sharing/video settings",
+    "Project file-only scope saved",
+    "Uploaded source preview metadata loaded",
+    "Explicit brand migration with version confirmation",
+    "Brand revision preserved",
+    "Briefing/aspect/duration/audio/scope/source unchanged by brand migration",
+    "No JavaScript exceptions"
+  ],
+  "source_preview_duration": 1.966667,
+  "imported_company_id": "158986aa0c8e73436e48731e",
+  "migrated_project_id": "95b99939e6bec2375e6173c6",
+  "brand_version_before": 2,
+  "brand_version_after": 3,
+  "limitations": "Only installed state flag overridden in browser. No Windows installation or RTX tests."
+}

@@ -1,0 +1,7 @@
+AMOSTRA SINTÉTICA DE VERIFICAÇÃO — não pertence a nenhuma empresa real.
+Vídeo: padrão de teste gerado localmente por FFmpeg, 6 segundos, 640x360/30 fps.
+Áudio: tom de 440 Hz com silêncio entre aproximadamente 2 e 4 segundos.
+Este material não contém fala. Serve para verificar importação, corte de pausas,
+formato, áudio e preservação do original; não avalia qualidade de transcrição.
+O roteiro e a combinação desta amostra foram criados para este pacote e são
+oferecidos sob CC0-1.0. Ferramentas usadas retêm suas próprias licenças.

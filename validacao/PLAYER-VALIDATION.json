@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "environment": "macOS Chrome, actual Go backend and bundled Remotion Player, no static source overrides",
+  "checks": [
+    "Real project and completed Remotion job loaded",
+    "Interactive modal iframe loaded same-origin",
+    "Actual React/Remotion composition text rendered",
+    "Playback changed screenshot pixels",
+    "No browser JavaScript errors",
+    "Modal closed"
+  ],
+  "requests_failed": [],
+  "asset_requests": [
+    {
+      "url": "http://127.0.0.1:49591/api/job-assets/6be08458e8ec1581c376fb25/50e822acbecc.svg",
+      "status": 200
+    }
+  ],
+  "frame0_sha256": "440714afb16c0e124279ae149f01e8ef551ea78e24601f9da0a157265c4fa9bf",
+  "playing_sha256": "b5d5a2178230fb9b06169e07dda9948fe8b94f0b5a0e4d070e499ddc123e6022",
+  "limitation": "Only installed response flag overridden for routing. No Windows install.",
+  "fixture_has_logo": true
+}

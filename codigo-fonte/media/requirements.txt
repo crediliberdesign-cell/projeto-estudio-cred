@@ -1,0 +1,13 @@
+faster-whisper==1.2.1
+ctranslate2==4.8.4
+Pillow==11.3.0
+fonttools==4.60.1
+pypdf==6.1.1
+python-docx==1.2.0
+nvidia-cublas-cu12==12.9.2.10; platform_system == "Windows"
+nvidia-cudnn-cu12==9.27.0.42; platform_system == "Windows"
+nvidia-cuda-runtime-cu12==12.9.79; platform_system == "Windows"
+# faster-whisper 1.2.1 calls av.open(metadata_errors=...); removed in PyAV 19.
+av==16.0.1
+# Required by fontTools when inspecting imported WOFF2 fonts.
+brotli==1.1.0

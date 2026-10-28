@@ -1,0 +1,135 @@
+ESTÚDIO LOCAL — AVISOS DE COMPONENTES DE TERCEIROS
+Revisão: 28/10/2026.
+
+Este arquivo identifica componentes e aponta os textos aplicáveis. Não substitui
+as licenças completas que acompanham cada pacote. downloads.json, os locks e os
+arquivos LICENSE/NOTICE dos componentes instalados identificam suas versões.
+
+O ZIP de entrega inclui o aplicativo, fontes, documentação e pequenos recursos
+de apoio. Modelos, FFmpeg, Ollama, Node, Python, bibliotecas NVIDIA e navegador
+de renderização são obtidos de seus distribuidores durante a instalação; seus
+binários e pesos não estão incorporados no ZIP. Copiar ou redistribuir uma pasta
+já instalada pode gerar obrigações adicionais de licença e fornecimento de código.
+
+REMOTION 4.0.539
+
+Remotion tem licença própria. O LICENSE.md efetivamente instalado permite uso
+gratuito por indivíduos, organizações com fins lucrativos de até três empregados,
+organizações sem fins lucrativos e avaliação sem uso comercial. Para entidades
+fora dos critérios, exige Company License. Um único operador em uma empresa maior
+não significa automaticamente elegibilidade gratuita.
+
+A página comercial consultada oferece Automators a US$0,01 por render, com mínimo
+de US$100/mês, e Creators a US$25/mês por usuário. A descrição de Automators abrange
+aplicativos de vídeo por prompt, renderização programática e Remotion Player;
+esta aplicação se aproxima dessa categoria quando Company License for exigida.
+Confirme a contratação aplicável com Remotion para a organização e o uso efetivos.
+O instalador não compra licença, não cadastra cobrança e não concede isenção.
+
+As condições em remotion.dev/docs/terms estavam identificadas como futuras v5.0.
+Elas não devem ser confundidas com o texto v4 desta versão instalada, inclusive
+quanto a futuras regras de telemetria. Preços e contratos podem mudar.
+https://www.remotion.dev/docs/license/pricing
+https://www.remotion.dev/docs/license/faq
+https://www.remotion.pro/terms-4-0
+https://www.remotion.dev/docs/terms
+
+Materiais oficiais de skills incluídos: origem e commit em
+skills/remotion-official/SOURCE.json. Consulte seu NOTICE.txt e a cópia
+LICENSE-REMOTION-UPSTREAM.md. O snapshot não contém licença independente MIT;
+não se atribuiu uma licença permissiva inexistente a esses materiais.
+
+MODELOS
+
+- Qwen3.5 4B e 9B: model cards oficiais indicam Apache License 2.0.
+  https://huggingface.co/Qwen/Qwen3.5-4B
+  https://huggingface.co/Qwen/Qwen3.5-9B
+- EmbeddingGemma 300M: licença Gemma, com termos próprios e restrições de uso;
+  não é Apache 2.0 nem MIT. O uso via Ollama não elimina esses termos.
+  https://huggingface.co/google/embeddinggemma-300m
+  https://ai.google.dev/gemma/terms
+- faster-whisper-large-v3-turbo, snapshot Dropbox Dash: o repositório informa MIT.
+  Preserve também os avisos do modelo e de sua origem ao redistribuir pesos.
+  https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo
+
+MOTORES E BIBLIOTECAS BAIXADOS
+
+- Ollama: MIT. Modelos têm licenças próprias, independentes do runtime.
+  https://github.com/ollama/ollama/blob/main/LICENSE
+- uv: escolha entre MIT e Apache 2.0, conforme licenças do projeto.
+  https://github.com/astral-sh/uv#license
+- Node.js: licença principal MIT; inclui componentes com outros avisos.
+  Preserve o LICENSE completo da distribuição Node, além dos avisos do npm.
+  https://github.com/nodejs/node/blob/main/LICENSE
+- Python: PSF License Version 2 e licenças de componentes incorporados.
+  A distribuição administrada pelo uv também contém avisos próprios.
+  https://docs.python.org/3.12/license.html
+- faster-whisper e CTranslate2: MIT; bibliotecas incorporadas têm avisos próprios.
+  https://github.com/SYSTRAN/faster-whisper/blob/master/LICENSE
+  https://github.com/OpenNMT/CTranslate2/blob/master/LICENSE
+- FFmpeg 9.0.2 essentials da Gyan: compilação GPLv3, incluindo bibliotecas como
+  libass e x264. FFmpeg/FFprobe são processos externos baixados na instalação.
+  Caso redistribua seus binários, confira as obrigações GPL e o código-fonte
+  correspondente; este aviso não representa uma oferta de fontes de terceiros.
+  https://www.gyan.dev/ffmpeg/builds/
+  https://github.com/FFmpeg/FFmpeg/commit/946fcce07b
+  https://ffmpeg.org/legal.html
+- NVIDIA cuBLAS, cuDNN, CUDA runtime e NVRTC: sujeitos aos contratos NVIDIA e
+  avisos incluídos nos pacotes, com condições específicas para distribuição.
+  A instalação local não transforma esses componentes em MIT/Apache.
+  https://docs.nvidia.com/cuda/eula/index.html
+  https://docs.nvidia.com/deeplearning/cudnn/backend/latest/reference/eula.html
+- Microsoft Visual C++ Redistributable: termos Microsoft do instalador oficial.
+  https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
+
+React, esbuild, Chromium, PyAV, Pillow, fonttools, pypdf, python-docx, brotli e
+demais dependências mantêm suas respectivas licenças. Não foi presumida uma
+licença única para a árvore transitiva. Consulte os LICENSE/NOTICE em
+assets/remotion/node_modules, no navegador baixado, nos diretórios *.dist-info
+do ambiente Python e nas pastas dos runtimes. Os locks registram versões e
+integridade; não são, por si só, uma auditoria jurídica dessas dependências.
+
+RECURSO DE ÁUDIO INCLUÍDO
+
+media/sample-pt.wav deriva de Pt-br-parabéns.ogg, por Lukenji, 23/08/2017,
+sob CC0 1.0 Universal. Foi convertido de Ogg Vorbis para PCM mono 16 kHz e
+recebeu 0,5 segundo de silêncio. Destina-se à verificação técnica da transcrição.
+https://commons.wikimedia.org/wiki/File:Pt-br-parab%C3%A9ns.ogg
+https://creativecommons.org/publicdomain/zero/1.0/
+O aviso completo e a identificação do original estão em media/sample-pt-LICENSE.txt.
+
+Fontes, logos, músicas, vídeos e documentos adicionados pelo usuário continuam
+sujeitos aos direitos e licenças de seus titulares. O aplicativo não transfere
+esses direitos entre empresas nem fornece licença de fontes comerciais.
+
+GO — AVISO DO RUNTIME E BIBLIOTECA PADRÃO INCORPORADOS
+
+Texto reproduzido do LICENSE do Go 1.27.3 usado na compilação:
+
+Copyright 2009 The Go Authors.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+   * Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following disclaimer
+in the documentation and/or other materials provided with the
+distribution.
+   * Neither the name of Google LLC nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

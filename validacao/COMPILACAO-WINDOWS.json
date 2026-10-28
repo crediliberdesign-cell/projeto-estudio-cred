@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0-preview.1",
+  "compiler": "Go 1.27.3",
+  "host": "macOS arm64",
+  "GOOS": "windows",
+  "GOARCH": "amd64",
+  "CGO_ENABLED": "0",
+  "format": "PE32+",
+  "machine": "AMD64",
+  "subsystem": "Windows GUI",
+  "command": "go build -trimpath -ldflags '-H=windowsgui -s -w' -o EstudioLocal-Instalar.exe .",
+  "windows_executed": false,
+  "exe_sha256": "b78c506d887305896cbe6ea97c721f36a41f0be2313d8b7a769dd74362d4cf0e",
+  "tests_go_passed": 49,
+  "tests_python_passed": 18,
+  "ffmpeg_integrations_passed": 7
+}

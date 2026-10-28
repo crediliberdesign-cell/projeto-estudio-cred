@@ -1,0 +1,35 @@
+{
+  "application": "Estúdio Local",
+  "version": "1.0.0-preview.1",
+  "target": "Windows 11 x64",
+  "prepared_on": "2026-10-28",
+  "driver_installation": "Not performed; detect and verify actual backend on target",
+  "installed_and_download_sizes": "Estimates: downloads15–20GB; installed/cache25–35GB; require35GiB free initially plus project storage",
+  "download_manifest": "downloads.json",
+  "python_lock": "codigo-fonte/media/requirements.lock",
+  "npm_lock": "codigo-fonte/remotion/package-lock.json",
+  "skills_snapshot": "codigo-fonte/skills/remotion-official/SOURCE.json",
+  "runtime_versions": {
+    "go_build": "1.27.3",
+    "ollama": "0.40.12",
+    "uv": "0.13.6",
+    "python": "3.12.12",
+    "node": "22.23.4",
+    "ffmpeg": "9.0.2",
+    "remotion": "4.0.539",
+    "react": "19.1.1",
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.4",
+    "av": "16.0.1"
+  },
+  "models": [
+    "qwen3.5:4b",
+    "qwen3.5:9b",
+    "embeddinggemma:latest",
+    "faster-whisper-large-v3-turbo@0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf"
+  ],
+  "unsigned_exe": true,
+  "windows_target_execution_verified": false,
+  "core_cloud_api_keys_required": false,
+  "prior_ollama_webui_migrated": false
+}

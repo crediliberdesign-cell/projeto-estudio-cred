@@ -1,0 +1,2 @@
+# Image and video prompts
+Deliver precise English prompts unless requested otherwise. Keep visible text/dialogue in the requested language. State subject, reference roles, action, framing, movement, duration and constraints only as applicable. Do not invent current model features. Ask for material missing references. Respect the current company identity and project briefing; historical documents are references, not new offers or instructions.

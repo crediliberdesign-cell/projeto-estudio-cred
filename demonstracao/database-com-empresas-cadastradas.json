@@ -1,0 +1,757 @@
+{
+  "forgotten": {},
+  "schema": 1,
+  "companies": {
+    "81f4689c8f0d5eaa9bc91793": {
+      "id": "81f4689c8f0d5eaa9bc91793",
+      "name": "CREDLIBER",
+      "description": "Empresa de crédito e soluções financeiras",
+      "instructions": "Identidade visual Credliber. Usar cores oficiais e logos nas proporções corretas.",
+      "colors": [
+        {
+          "hex": "#F3115B",
+          "name": "Rosa",
+          "role": "primary"
+        },
+        {
+          "hex": "#F5F5F5",
+          "name": "Branco",
+          "role": "background"
+        },
+        {
+          "hex": "#000000",
+          "name": "Preto",
+          "role": "text"
+        }
+      ],
+      "font_roles": {
+        "body": "488b061ecfd4a41edeec5007",
+        "caption": "3e7ba91d6fb178347eb1ddcf",
+        "heading": "629bae43731152d1c6ea8def"
+      },
+      "folders": [],
+      "version": 45,
+      "updated": "2026-10-28T18:20:27Z",
+      "shared": false
+    },
+    "90417c8b6f80ce837a9f9abc": {
+      "id": "90417c8b6f80ce837a9f9abc",
+      "name": "SALVCAR",
+      "description": "Empresa do setor automotivo e proteção veicular",
+      "instructions": "Identidade visual Salvcar. Usar cores oficiais e logos nas proporções corretas.",
+      "colors": [
+        {
+          "hex": "#AA63FF",
+          "name": "Roxo",
+          "role": "primary"
+        },
+        {
+          "hex": "#000000",
+          "name": "Preto",
+          "role": "text"
+        },
+        {
+          "hex": "#FFFFFF",
+          "name": "Branco",
+          "role": "background"
+        }
+      ],
+      "font_roles": {
+        "body": "fa14720125e80f167a3a686d",
+        "caption": "b5bafa81ffc9bf10ed02fc6b",
+        "heading": "e864a2b8f21cf91748106118"
+      },
+      "folders": [],
+      "version": 17,
+      "updated": "2026-10-28T18:20:40Z",
+      "shared": false
+    },
+    "e7c131501f59302924c442f1": {
+      "id": "e7c131501f59302924c442f1",
+      "name": "GRANDINO",
+      "description": "Empresa Grandino",
+      "instructions": "Identidade visual Grandino. Usar cores oficiais e logos nas proporções corretas.",
+      "colors": [
+        {
+          "hex": "#4AFFC5",
+          "name": "Verde",
+          "role": "primary"
+        },
+        {
+          "hex": "#FFFFFF",
+          "name": "Branco",
+          "role": "background"
+        },
+        {
+          "hex": "#000000",
+          "name": "Preto",
+          "role": "text"
+        }
+      ],
+      "font_roles": {
+        "body": "fa8c443a0ebe661d82674867",
+        "caption": "aac1b86fa4dde232821d8aa8",
+        "heading": "2e1b8f60a6c711131c3db64b"
+      },
+      "folders": [],
+      "version": 16,
+      "updated": "2026-10-28T18:21:52Z",
+      "shared": false
+    }
+  },
+  "assets": {
+    "066d8b35e76a366a008859a9": {
+      "id": "066d8b35e76a366a008859a9",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume Black.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\066d8b35e76a366a008859a9.ttf",
+      "sha256": "730c4ae2b523a3741bb19cc09b415d1ad24ce3682334bb9a310ed609feb77e4e",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "07b4a6bcdc1def692300595a": {
+      "id": "07b4a6bcdc1def692300595a",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-Light.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\07b4a6bcdc1def692300595a.ttf",
+      "sha256": "432fceb450f7070e792ca90076b4a4650a7cb3866f24237193d31a3eedd4f513",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "07d7f14cb6d4184227a38dac": {
+      "id": "07d7f14cb6d4184227a38dac",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume SemiBold.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\07d7f14cb6d4184227a38dac.ttf",
+      "sha256": "cbb8ef3fb212b5f5b80db18779d980092a28d9fe249fc603ff8520f1250a4a6c",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "0a28214c12a4fdcdbd238b47": {
+      "id": "0a28214c12a4fdcdbd238b47",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "SORA-THIN.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\0a28214c12a4fdcdbd238b47.ttf",
+      "sha256": "d3280a8f00382a4240a1eb5275287586e2e0b32514e364b98776cc7921dc4114",
+      "status": "ready",
+      "created": "2026-10-28T18:21:05Z"
+    },
+    "0de8e28c0f4d0b31e02d36b8": {
+      "id": "0de8e28c0f4d0b31e02d36b8",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-LightItalic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\0de8e28c0f4d0b31e02d36b8.ttf",
+      "sha256": "4c15e2e2be7f39d95cf1baa78be4bca809b1712bd7ad0ddc327888093655c651",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "1065f5ce0fe536bbfc96d914": {
+      "id": "1065f5ce0fe536bbfc96d914",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-BlackItalic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\1065f5ce0fe536bbfc96d914.ttf",
+      "sha256": "262943f67913bd19e7202fd780bfe194c9366f0b5625a6f225fb03149c9dfe10",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "11ef0895e571c2092c4a79e7": {
+      "id": "11ef0895e571c2092c4a79e7",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume ExtraBold Italic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\11ef0895e571c2092c4a79e7.ttf",
+      "sha256": "11593906317e47125c695ec31e7a98a8381f123d3b6e99bf049430b1c162ad74",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "12c17b2f8dfdeb2047cec0b5": {
+      "id": "12c17b2f8dfdeb2047cec0b5",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-VariableFont_wght.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\12c17b2f8dfdeb2047cec0b5.ttf",
+      "sha256": "e5b1a3fbac6e5bf9f20860f9a254abe39240439f445568d8cd37482789e5dcac",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "140b682d2b55a4d168622618": {
+      "id": "140b682d2b55a4d168622618",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-SemiBold.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\140b682d2b55a4d168622618.ttf",
+      "sha256": "e23dc6d21070d45a1840c2b8217fc17ddd8a502a4db652748ec2f40d3603dc2d",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "1dc123a8312ea231984b5610": {
+      "id": "1dc123a8312ea231984b5610",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-ExtraLightItalic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\1dc123a8312ea231984b5610.ttf",
+      "sha256": "4ef31507299e50cf7e0bcdfcc81e1cd5df67f2882d9f1df0bdba892bde5061cf",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "1e8a0f1897d3fa7284f89443": {
+      "id": "1e8a0f1897d3fa7284f89443",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume Medium Italic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\1e8a0f1897d3fa7284f89443.ttf",
+      "sha256": "e953b8650a8280617c670e9988ba7345eb39d2106d99cf7be896a59cd45e43c8",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "1f88a79e5c59d3c9f7723917": {
+      "id": "1f88a79e5c59d3c9f7723917",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "SORA-SEMIBOLD.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\1f88a79e5c59d3c9f7723917.ttf",
+      "sha256": "d3f71f8d5bb84e1db9cc5a0418d89542c30855e4e4841378c815f89ddb4a2627",
+      "status": "ready",
+      "created": "2026-10-28T18:19:15Z"
+    },
+    "25adeab0a3e67fad090bd848": {
+      "id": "25adeab0a3e67fad090bd848",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "Logo03 - Salvcar.png",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\25adeab0a3e67fad090bd848.png",
+      "sha256": "2cf39a6f3fe498db59555792ce14693f7ed48ac60050a8e3eb262862a1917cfc",
+      "status": "ready",
+      "created": "2026-10-28T18:16:31Z"
+    },
+    "298c7613342fa5c68e5b681b": {
+      "id": "298c7613342fa5c68e5b681b",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume Light.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\298c7613342fa5c68e5b681b.ttf",
+      "sha256": "ed25a9c70683465672be58f287d088a5ebf27d17ab474d56c2c330b0366997b0",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "2a502eff767d78e29697d494": {
+      "id": "2a502eff767d78e29697d494",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume ExtraLight Italic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\2a502eff767d78e29697d494.ttf",
+      "sha256": "07a6bd0c0de36844d0de47f8dcc204b3a16df4578594afa82afc273269bf5318",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "2bcf7489a391f27fa6654c17": {
+      "id": "2bcf7489a391f27fa6654c17",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-MediumItalic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\2bcf7489a391f27fa6654c17.ttf",
+      "sha256": "2436096e469bff268cc73316b2210fddfd7cdd615710111635bf1cd7a7fe04d2",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "2e1b8f60a6c711131c3db64b": {
+      "id": "2e1b8f60a6c711131c3db64b",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "SORA-EXTRABOLD.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\2e1b8f60a6c711131c3db64b.ttf",
+      "sha256": "f4acfad7c537398764ad85ba1175c5b71085c71e42cc7c8e61cc387e478539fc",
+      "status": "ready",
+      "created": "2026-10-28T18:21:05Z"
+    },
+    "34c6bde88231cbfdb193b233": {
+      "id": "34c6bde88231cbfdb193b233",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume Regular.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\34c6bde88231cbfdb193b233.ttf",
+      "sha256": "98de8c6909997033a7149af2abd8945296881d4332fa3a91552995922be9cc17",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "39b000b40b6077e0e82b1377": {
+      "id": "39b000b40b6077e0e82b1377",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume Black Italic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\39b000b40b6077e0e82b1377.ttf",
+      "sha256": "a6ec70183dba1fd7bbe563f29bb398b8e334e07ca1fc279130b14c795d36f640",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "3e3499cc9dba8f84da16b8fa": {
+      "id": "3e3499cc9dba8f84da16b8fa",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "SORA-EXTRALIGHT.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\3e3499cc9dba8f84da16b8fa.ttf",
+      "sha256": "30950a9d52a56f0293883369c3f2b100899232c8eca91071130f90b265c49da5",
+      "status": "ready",
+      "created": "2026-10-28T18:19:15Z"
+    },
+    "3e7ba91d6fb178347eb1ddcf": {
+      "id": "3e7ba91d6fb178347eb1ddcf",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-Black.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\3e7ba91d6fb178347eb1ddcf.ttf",
+      "sha256": "b813c7144bfb180729a648910c8eaf8be36cb8effac81c63b0a770b6125470b0",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "4452af55de1874be7380b04d": {
+      "id": "4452af55de1874be7380b04d",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-ExtraLight.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\4452af55de1874be7380b04d.ttf",
+      "sha256": "8153510115d375ab856a89214fcc8040e08e600c71628e64f32f871138298c05",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "44922441cb865901c176cce8": {
+      "id": "44922441cb865901c176cce8",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "SORA-SEMIBOLD.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\44922441cb865901c176cce8.ttf",
+      "sha256": "d3f71f8d5bb84e1db9cc5a0418d89542c30855e4e4841378c815f89ddb4a2627",
+      "status": "ready",
+      "created": "2026-10-28T18:21:05Z"
+    },
+    "44a6ef11121394968392872f": {
+      "id": "44a6ef11121394968392872f",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume ExtraLight.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\44a6ef11121394968392872f.ttf",
+      "sha256": "4ef59561431d4fde179ad44664f1fa7ce72a9fa25c1fe24eb88e1f7837ca9142",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "488b061ecfd4a41edeec5007": {
+      "id": "488b061ecfd4a41edeec5007",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-Medium.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\488b061ecfd4a41edeec5007.ttf",
+      "sha256": "264819b013d40e46a82f5063ae3ce44d3cb8aaced43d85897f4ced66496d5a85",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "502fb44533c8edef4ef2cbc6": {
+      "id": "502fb44533c8edef4ef2cbc6",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "Logo01 - Salvcar.png",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\502fb44533c8edef4ef2cbc6.png",
+      "sha256": "379027376b3c46da633f49fac605e938a2710f35bdb9c0a8963a100d9bce9909",
+      "status": "ready",
+      "created": "2026-10-28T18:16:31Z"
+    },
+    "5b40ef4e83479cc60ef81f70": {
+      "id": "5b40ef4e83479cc60ef81f70",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Sem título-14.png",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\5b40ef4e83479cc60ef81f70.png",
+      "sha256": "1d480eca132fdad1622f06fc0d79b161fc3a5400456b53abc090328279aff032",
+      "status": "ready",
+      "created": "2026-10-28T18:15:20Z"
+    },
+    "5c645b2fd8ed2f4ac73bdc79": {
+      "id": "5c645b2fd8ed2f4ac73bdc79",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-ExtraBoldItalic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\5c645b2fd8ed2f4ac73bdc79.ttf",
+      "sha256": "9f4cf7fd4b6e8673473e0636711146d7b4e673b493b1e558d7a01a5e3431a4cb",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "629bae43731152d1c6ea8def": {
+      "id": "629bae43731152d1c6ea8def",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume Bold.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\629bae43731152d1c6ea8def.ttf",
+      "sha256": "85ebace3681896c2c1e2c9ad100d97ffafee58053ca7e8dcb9415fa5d967ca70",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "6ea895374434d6d4299ed777": {
+      "id": "6ea895374434d6d4299ed777",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "LOGOS GRANDINO.svg",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\6ea895374434d6d4299ed777.svg",
+      "sha256": "ca61775d1d07ee02e44e4aafc205bb0a063d3ff096cfa835a981a9acd6edb033",
+      "status": "ready",
+      "created": "2026-10-28T18:20:54Z"
+    },
+    "753cc664f49acbc679b4b50d": {
+      "id": "753cc664f49acbc679b4b50d",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume Medium.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\753cc664f49acbc679b4b50d.ttf",
+      "sha256": "18689e86d20f1d840f60b0172495908cc949d62ee559567e0ed13da9c6fd248c",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "7b7dd640e09060c714a120f7": {
+      "id": "7b7dd640e09060c714a120f7",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "SORA-EXTRALIGHT.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\7b7dd640e09060c714a120f7.ttf",
+      "sha256": "30950a9d52a56f0293883369c3f2b100899232c8eca91071130f90b265c49da5",
+      "status": "ready",
+      "created": "2026-10-28T18:21:05Z"
+    },
+    "80c247df21373a8c294d5a00": {
+      "id": "80c247df21373a8c294d5a00",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "SORA-VARIABLEFONT_WGHT (1).TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\80c247df21373a8c294d5a00.ttf",
+      "sha256": "fdd65e9926a68ff1ba65ab5fef968431a09402ccd949367f557ecfd5b5c6d6e0",
+      "status": "ready",
+      "created": "2026-10-28T18:21:05Z"
+    },
+    "84372d18f9cb8e461acdeecd": {
+      "id": "84372d18f9cb8e461acdeecd",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "FontsFree-Net-zuumerough-bold-2.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\84372d18f9cb8e461acdeecd.ttf",
+      "sha256": "e78a18df982d4c49454aa7c683e32fc0ee981123ccaf98caf1f6a2f557a1f8ce",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "862dfed66da1d62bcec19189": {
+      "id": "862dfed66da1d62bcec19189",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "G-GRANDINO - branco.png",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\862dfed66da1d62bcec19189.png",
+      "sha256": "443d94110c314de9bd6a99fb0994e2af16fbe9ed2f2cea9d3e400bfe57ef7430",
+      "status": "ready",
+      "created": "2026-10-28T18:20:54Z"
+    },
+    "8ce5045ae4afdafc5630d710": {
+      "id": "8ce5045ae4afdafc5630d710",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "G-GRANDINO.png",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\8ce5045ae4afdafc5630d710.png",
+      "sha256": "15d2c0126ee28b15bf14eb1742c62288d396cc4077164e899474c6a2f434af9f",
+      "status": "ready",
+      "created": "2026-10-28T18:20:54Z"
+    },
+    "90530a49270e25f80510e0c5": {
+      "id": "90530a49270e25f80510e0c5",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-ExtraBold.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\90530a49270e25f80510e0c5.ttf",
+      "sha256": "ebc2e02bb921205b44f09ba0a5fa7d1174d0f120e873e00b3576d660e0310fb5",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "94c8290b8743367fb6959d99": {
+      "id": "94c8290b8743367fb6959d99",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "Logo02 - Salvcar.png",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\94c8290b8743367fb6959d99.png",
+      "sha256": "4035b9913b8bcf92c9b9ba65d7f848e72ba3f001cab69cd5a75d7b7ecfbf9a2a",
+      "status": "ready",
+      "created": "2026-10-28T18:16:31Z"
+    },
+    "a2acc32a96680f201cdb0f78": {
+      "id": "a2acc32a96680f201cdb0f78",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Sem título-12.png",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\a2acc32a96680f201cdb0f78.png",
+      "sha256": "9324ee4cbd0929ce03c9a7862009955c6e3bf65ae48b0f03daba8b5c57757d0d",
+      "status": "ready",
+      "created": "2026-10-28T18:15:20Z"
+    },
+    "aa49ce63bf78e864f01dcefd": {
+      "id": "aa49ce63bf78e864f01dcefd",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-ThinItalic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\aa49ce63bf78e864f01dcefd.ttf",
+      "sha256": "d5bf513555ac2ee9e01adf5c8811e3a161204cfa13337d2150d0ab3e6ec4a990",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "aac1b86fa4dde232821d8aa8": {
+      "id": "aac1b86fa4dde232821d8aa8",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "SORA-BOLD.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\aac1b86fa4dde232821d8aa8.ttf",
+      "sha256": "969307b8439d3fb15858b295590ac1449ab5ba4f818ac37e82536a1a462a99ec",
+      "status": "ready",
+      "created": "2026-10-28T18:21:05Z"
+    },
+    "b5bafa81ffc9bf10ed02fc6b": {
+      "id": "b5bafa81ffc9bf10ed02fc6b",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "SORA-BOLD.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\b5bafa81ffc9bf10ed02fc6b.ttf",
+      "sha256": "969307b8439d3fb15858b295590ac1449ab5ba4f818ac37e82536a1a462a99ec",
+      "status": "ready",
+      "created": "2026-10-28T18:19:15Z"
+    },
+    "b9a9c0202b429bf3abb0fe26": {
+      "id": "b9a9c0202b429bf3abb0fe26",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "LOGO1 GRANDINO.png",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\b9a9c0202b429bf3abb0fe26.png",
+      "sha256": "1657b4a1130f969cca3eee2ea107073d3a305b0734c5e1b922a3dc0b6ee77117",
+      "status": "ready",
+      "created": "2026-10-28T18:20:54Z"
+    },
+    "ba1ae514fae5dd698723d20c": {
+      "id": "ba1ae514fae5dd698723d20c",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "SORA-THIN.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\ba1ae514fae5dd698723d20c.ttf",
+      "sha256": "d3280a8f00382a4240a1eb5275287586e2e0b32514e364b98776cc7921dc4114",
+      "status": "ready",
+      "created": "2026-10-28T18:19:15Z"
+    },
+    "c1e27bf27a492cf04d2cd7f7": {
+      "id": "c1e27bf27a492cf04d2cd7f7",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume ExtraBold.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\c1e27bf27a492cf04d2cd7f7.ttf",
+      "sha256": "e83865d0c57cbe35bd96d24d23a960b091da123613fc4aa1958c838334ede8ef",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "ca3404b333094f020e1c380a": {
+      "id": "ca3404b333094f020e1c380a",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume Bold Italic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\ca3404b333094f020e1c380a.ttf",
+      "sha256": "2851102a1826c21a465d024f16e6fb4176d168d238bd39b41411fb3b6e46d090",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "d0e8ac584aa362bcd419021e": {
+      "id": "d0e8ac584aa362bcd419021e",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "SORA-LIGHT.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\d0e8ac584aa362bcd419021e.ttf",
+      "sha256": "ab9f76b37a10fe99d3a27e82cc8e08345243628b523528e655bd0ee55580b2af",
+      "status": "ready",
+      "created": "2026-10-28T18:19:15Z"
+    },
+    "d2a825ba3941e684c8d376ba": {
+      "id": "d2a825ba3941e684c8d376ba",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-Italic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\d2a825ba3941e684c8d376ba.ttf",
+      "sha256": "8b54f487b67e455c61ed17d9332aef6117f1688b53fcba4ccea4c78c022f4919",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "d451b376fc815619f3acb950": {
+      "id": "d451b376fc815619f3acb950",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-Regular.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\d451b376fc815619f3acb950.ttf",
+      "sha256": "c3fb0280e4339f6c70cea42b8b432c6fb17fde130fbb12e9209c7cdfa79d976f",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "d5f503e3d7f039328653593d": {
+      "id": "d5f503e3d7f039328653593d",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "SORA-VARIABLEFONT_WGHT (1).TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\d5f503e3d7f039328653593d.ttf",
+      "sha256": "fdd65e9926a68ff1ba65ab5fef968431a09402ccd949367f557ecfd5b5c6d6e0",
+      "status": "ready",
+      "created": "2026-10-28T18:19:15Z"
+    },
+    "db5760d4127b6ed7f608b7af": {
+      "id": "db5760d4127b6ed7f608b7af",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume Light Italic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\db5760d4127b6ed7f608b7af.ttf",
+      "sha256": "427d174d54c3805d2079272ff9263a4c9ef9c0b87ff083459da44c9d818840e7",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "e16a6719d5da07fad09911b2": {
+      "id": "e16a6719d5da07fad09911b2",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Sem título-1.png",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\e16a6719d5da07fad09911b2.png",
+      "sha256": "1c3243534d075a06356caa924c010d42c7eee346662becad57e78275614ef83a",
+      "status": "ready",
+      "created": "2026-10-28T18:15:20Z"
+    },
+    "e1fc9c81ccc7addbcedcbe35": {
+      "id": "e1fc9c81ccc7addbcedcbe35",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-SemiBoldItalic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\e1fc9c81ccc7addbcedcbe35.ttf",
+      "sha256": "59e24644aeb86c568f2b74ac59472a96a2246865acb2737579367c9641adfca0",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "e47629a180a3d187a21b837e": {
+      "id": "e47629a180a3d187a21b837e",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "SALVCAR_LOGOS.svg",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\e47629a180a3d187a21b837e.svg",
+      "sha256": "dea0e48cc9e882218eaaca0a9931f2fbddfd59644d44bf326abb1cb129cdc937",
+      "status": "ready",
+      "created": "2026-10-28T18:16:33Z"
+    },
+    "e864a2b8f21cf91748106118": {
+      "id": "e864a2b8f21cf91748106118",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "SORA-EXTRABOLD.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\e864a2b8f21cf91748106118.ttf",
+      "sha256": "f4acfad7c537398764ad85ba1175c5b71085c71e42cc7c8e61cc387e478539fc",
+      "status": "ready",
+      "created": "2026-10-28T18:19:15Z"
+    },
+    "e91863c9c1d255285a12ab69": {
+      "id": "e91863c9c1d255285a12ab69",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Montserrat-BoldItalic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\e91863c9c1d255285a12ab69.ttf",
+      "sha256": "984fd6ee94df32d5376ed81cfede806f91dc7b739d55c09d3bebf08fa2aa503a",
+      "status": "ready",
+      "created": "2026-10-28T18:19:32Z"
+    },
+    "f25f4b7763f747517aa1f3fd": {
+      "id": "f25f4b7763f747517aa1f3fd",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "LOGO2 GRANDINO.png",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\f25f4b7763f747517aa1f3fd.png",
+      "sha256": "5275a223bb7e6bdf568b8147d2d3c1b4d6e1418798250d629c78092153a3eb33",
+      "status": "ready",
+      "created": "2026-10-28T18:20:54Z"
+    },
+    "f5d420373cac9c9f3f7694ef": {
+      "id": "f5d420373cac9c9f3f7694ef",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume Italic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\f5d420373cac9c9f3f7694ef.ttf",
+      "sha256": "36cc7630813d7a05b470111f389b7b695faa584ff13e678b1a7ee5899f40ae2f",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "f5db0b41ac14a75a3e75994c": {
+      "id": "f5db0b41ac14a75a3e75994c",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Zuume SemiBold Italic.ttf",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\f5db0b41ac14a75a3e75994c.ttf",
+      "sha256": "c2cb920eb93a703175d1023c1a4ea5211ff51ba07b596066f82a278a85889fae",
+      "status": "ready",
+      "created": "2026-10-28T18:19:47Z"
+    },
+    "fa14720125e80f167a3a686d": {
+      "id": "fa14720125e80f167a3a686d",
+      "company_id": "90417c8b6f80ce837a9f9abc",
+      "name": "SORA-MEDIUM.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\90417c8b6f80ce837a9f9abc\\assets\\fa14720125e80f167a3a686d.ttf",
+      "sha256": "15d635c97cae1b583f64ff644fc71e473b45af468489747bebee2ce3c230d310",
+      "status": "ready",
+      "created": "2026-10-28T18:19:15Z"
+    },
+    "fa8c443a0ebe661d82674867": {
+      "id": "fa8c443a0ebe661d82674867",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "SORA-MEDIUM.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\fa8c443a0ebe661d82674867.ttf",
+      "sha256": "15d635c97cae1b583f64ff644fc71e473b45af468489747bebee2ce3c230d310",
+      "status": "ready",
+      "created": "2026-10-28T18:21:05Z"
+    },
+    "fb87328e5d02ca9fe570f17a": {
+      "id": "fb87328e5d02ca9fe570f17a",
+      "company_id": "e7c131501f59302924c442f1",
+      "name": "SORA-LIGHT.TTF",
+      "kind": "font",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\e7c131501f59302924c442f1\\assets\\fb87328e5d02ca9fe570f17a.ttf",
+      "sha256": "ab9f76b37a10fe99d3a27e82cc8e08345243628b523528e655bd0ee55580b2af",
+      "status": "ready",
+      "created": "2026-10-28T18:21:05Z"
+    },
+    "fbbba7f54d24bf534f2255df": {
+      "id": "fbbba7f54d24bf534f2255df",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "Sem título-3.png",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\fbbba7f54d24bf534f2255df.png",
+      "sha256": "79638c42118c500f2f016c42fe9624e381363472a3e404f42e320dddb849f684",
+      "status": "ready",
+      "created": "2026-10-28T18:15:20Z"
+    },
+    "ff7173c1cfde8357e33f8574": {
+      "id": "ff7173c1cfde8357e33f8574",
+      "company_id": "81f4689c8f0d5eaa9bc91793",
+      "name": "CREDLIBER ALLCOLOR.svg",
+      "kind": "logo",
+      "path": "C:\\Users\\User\\AppData\\Local\\AtelieLocal\\companies\\81f4689c8f0d5eaa9bc91793\\assets\\ff7173c1cfde8357e33f8574.svg",
+      "sha256": "93d00dc5eb3cf738355b76ccb01a28a19cbfa324ce09afff98f06923a5921e8d",
+      "status": "ready",
+      "created": "2026-10-28T18:15:29Z"
+    }
+  },
+  "projects": {},
+  "memories": {},
+  "chunks": {},
+  "jobs": {},
+  "settings": {
+    "memory_enabled": true,
+    "web_enabled": true,
+    "model_quick": "qwen3.5:4b",
+    "model_agent": "qwen3.5:9b",
+    "embedding_model": "embeddinggemma",
+    "remotion_license_ack": false
+  },
+  "installed": false
+}
